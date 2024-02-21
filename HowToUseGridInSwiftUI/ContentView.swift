@@ -14,6 +14,9 @@ struct ContentView: View {
                 cell(int: 1)
                 cell(int: 2)
             }
+            Divider()
+                .gridCellUnsizedAxes(.horizontal)
+            
             GridRow {
                 cell(int: 3)
                 cell(int: 4)
