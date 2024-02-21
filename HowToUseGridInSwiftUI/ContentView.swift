@@ -11,21 +11,28 @@ struct ContentView: View {
     var body: some View {
         Grid {
             GridRow {
-                Text("1")
-                Text("1")
-                Text("1")
+                cell(int: 1)
+                cell(int: 2)
             }
             GridRow {
-                Text("1")
-                Text("1")
-                Text("1")
+                cell(int: 3)
+                cell(int: 4)
+                cell(int: 5)
             }
-            Text("1")
-            Text("1")
-            Text("1")
+            cell(int: 6)
+            cell(int: 7)
+            cell(int: 8)
         }
     }
+    
+    private func cell(int: Int) -> some View {
+        Text("\(int)")
+            .font(.largeTitle)
+            .padding()
+            .background(Color.blue)
+    }
 }
+
 
 #Preview {
     ContentView()
